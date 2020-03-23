@@ -1,0 +1,19 @@
+---
+- name: Include operating system specific tasks
+  include_tasks: "{{ epel_os_tasks }}"
+  with_first_found:
+    - files:
+        - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}.yml"
+        - "{{ ansible_distribution | lower }}.yml"
+        - "{{ ansible_os_family | lower }}-{{ ansible_distribution_major_version }}.yml"
+        - "{{ ansible_os_family | lower }}.yml"
+      paths:
+        - tasks
+      skip: true
+  loop_control:
+    loop_var: epel_os_tasks
+
+- name: Configure Extra Packages for Enterprise Linux repository
+  package:
+    name: epel-release
+    state: "{{ epel_package_state }}"

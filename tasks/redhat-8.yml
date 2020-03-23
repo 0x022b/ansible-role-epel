@@ -1,0 +1,5 @@
+---
+- name: Configure codeready-builder repository
+  rhsm_repository:
+    name: codeready-builder-for-rhel-8-$(arch)-rpms
+    state: enabled
