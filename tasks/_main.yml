@@ -9,7 +9,7 @@
         - "{{ ansible_os_family | lower }}.yml"
       paths:
         - tasks
-      skip: true
+      skip: yes
   loop_control:
     loop_var: epel_os_tasks
 

@@ -3,4 +3,4 @@
   command:
     cmd: dnf config-manager --set-enabled PowerTools
     creates: /etc/yum.repos.d/CentOS-PowerTools.repo
-    warn: false
+    warn: no
