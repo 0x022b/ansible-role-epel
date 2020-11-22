@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 boxes = [
-  { :name => "centos-7", :box => "centos/7", :box_version => "1905.1" },
-  { :name => "centos-8", :box => "centos/8", :box_version => "1905.1" },
+  { :name => "centos-7", :box => "centos/7" },
+  { :name => "centos-8", :box => "centos/8" },
 ]
 
 provisioner = ARGV.length == 1 ? boxes.last[:name] \
