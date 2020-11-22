@@ -1,5 +1,7 @@
 # Ansible Role: EPEL
 
+![Ansible Galaxy](https://github.com/0x022b/ansible-role-epel/workflows/Ansible%20Galaxy/badge.svg)
+
 Ansible role that configures [Extra Packages for Enterprise Linux][epel] repository.
 
 ## Requirements
