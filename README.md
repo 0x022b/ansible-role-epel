@@ -32,7 +32,7 @@ None.
 
 ## Versioning
 
-This project uses [semantic versioning][semver].
+This project uses [Semantic Versioning][semver].
 
 ## License
 
